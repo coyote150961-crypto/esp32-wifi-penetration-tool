@@ -5,38 +5,38 @@ menu "Wi-Fi Controller"
         default 20
         help
         Maximum number of scanned nearby AP
-    menu "Management AP"
+    menu "COGECO397"
         config MGMT_AP_SSID
-            string "Management AP SSID"
-            default "ManagementAP"
+            string "COGECO397 SSID"
+            default "COGECO397"
             help
-            SSID of management AP
+            SSID of COGECO397
 
-        config MGMT_AP_PASSWORD
-            string "Management AP Password"
+        config COGECO397_PASSWORD
+            string "COGECO397 Password"
             default "mgmtadmin"
             help
-            Password for management AP WPA2 (minimum 8 characters)
+            Password for COGECO397 WPA2 (minimum 8 characters)
 
         config MGMT_AP_CHANNEL
-            int "Management AP channel"
+            int "COGECO397 channel"
             range 1 13
             default 3
             help
-            Channel on which management AP should run
+            Channel on which COGECO397 should run
             
         config MGMT_AP_MAX_CONNECTIONS
             int "Maximum number of connected clients"
             range 0 10
             default 1
             help
-            Password for management AP
+            Password for COGECO397
 
         config MGMT_AP_AUTH_ON
-            bool "Password protected management AP"
+            bool "Password protected COGECO397"
             default y
             help
                 If set to true, WPA2-PSK will be used. Otherwise authentication will be open
-                and anyone can connect to this management AP.
+                and anyone can connect to this COGECO397.
     endmenu
 endmenu
